@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alber Mosque Age Validator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Age Validator</h1>
+            <label for="dob">Select Date of Birth</label>
+            <div class="date-picker">
+                <select id="day" name="day"></select>
+                <select id="month" name="month"></select>
+                <select id="year" name="year"></select>
+            </div>
+            <label for="gender">Select Gender</label>
+            <select id="gender">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <button onclick="calculateAge()">Validate Me</button>
+            <div id="result" class="result"></div>
+            <iframe id="contentFrame" class="content-frame" width="100%" height="400"></iframe>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
