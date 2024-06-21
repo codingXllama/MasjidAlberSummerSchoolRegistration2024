@@ -81,6 +81,8 @@ function calculateAge() {
 function determineAgeGroup(age, gender) {
   if (age >= 7 && age <= 9 && gender === "Male") {
     return "a";
+  } else if (age == 0 && gender == "Male") {
+    return "test";
   } else if (age >= 10 && age <= 12 && gender === "Male") {
     return "b";
   } else if ((age == 13 && gender === "Male") || (age == 14 && gender === "Male")) {
@@ -118,6 +120,10 @@ function loadWebsiteInIframe(ageGroup) {
       break;
     case "f":
       url = "https://mohid.co/go/yoRdqEQ";
+      break;
+    case "test":
+      url = "https://mohid.co/go/JoZB6vo";
+      alert("This is not an official registration, this is for TESTING purposes");
       break;
     default:
       url = "https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/9/7/5/9/9759c4afa28f61ee32831311b3d5d55f67f5e172.png"; // Default URL
